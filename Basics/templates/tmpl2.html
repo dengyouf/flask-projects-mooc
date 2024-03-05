@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja2语法2</title>
+</head>
+<body>
+    <h1>inja2语法2</h1>
+    <h2>if-else语句</h2>
+    {% if  show %}
+    {{ name }}
+    {% elif  show_name %}
+    <p>{{ show_name }}</p>
+    {% else %}
+    not_show
+    {% endif %}
+
+    <hr >
+    <h2>for循环</h2>
+    {% for k, v  in books.items() %}
+    <ul>
+        <li>{{ k }}-{{ v }}</li>
+    </ul>
+    {% endfor%}
+
+    <h2>for循环</h2>
+    {% for n  in number %}
+    <ul>
+        <li>{{ n }}</li>
+    </ul>
+    {% endfor%}
+</body>
+</html>

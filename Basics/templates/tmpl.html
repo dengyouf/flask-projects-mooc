@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja2模版渲染</title>
+</head>
+<body>
+    <h1>Jinja2模版</h1>
+    <p>这是session传过来的{{ session.username }}</p>
+    <hr >
+
+    <ul>
+        <li>{{ name }}</li>
+        <li>{{ age }}</li>
+        <li>{{ books.no1 }}</li>
+        <li>{{ books["no2"] }}</li>
+        <li>{{ number[-1] }}</li>
+    </ul>
+</body>
+</html>
